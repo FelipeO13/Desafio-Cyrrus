@@ -1,0 +1,21 @@
+{"Id":"1",
+    "titulo": "Estudar JavaScript",
+    "descricao": "Revisar os conceitos de funções, objetos e arrays.",
+    "data": "2025-04-23",
+    "status": "em andamento",
+    "subtarefas": [
+      {
+        "descricao": "Estudar funções",
+        "status": "concluído"
+      },
+      {
+        "descricao": "Estudar objetos",
+        "status": "em andamento"
+      },
+      {
+        "descricao": "Estudar arrays",
+        "status": "pendente"
+      }
+    ]
+  }
+  

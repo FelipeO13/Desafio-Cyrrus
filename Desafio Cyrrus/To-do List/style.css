@@ -1,0 +1,180 @@
+/* Definindo cores */
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --primary-color: blue;
+  --danger-color: red;
+  --gray: gray;
+  --white: white;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+form {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+form input,
+form button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2563eb;
+}
+
+#filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#filtros button {
+  background: #e5e7eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+#filtros button:hover {
+  background: #d1d5db;
+}
+
+#filtros input {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+#contador {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+ul#listaTarefas {
+  list-style: none;
+}
+
+ul#listaTarefas li {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+
+ul#listaTarefas li strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--primary-color);
+}
+
+.tarefa-atrasada {
+  color: var(--danger-color);
+}
+
+.tarefa-atrasada {
+  color: var(--danger-color);
+}
+
+
+
+ul#listaTarefas button {
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+ul#listaTarefas button:hover {
+  background-color: #2563eb;
+}
+
+/* Subtarefas */
+ul#listaTarefas ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e5e7eb;
+}
+
+ul#listaTarefas ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+input[id^="novaSub"] {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+
+button[onclick^="adicionarSubtarefa"] {
+  background-color: var(--gray);
+  color: var(--white);
+  font-size: 0.85rem;
+}
+
+button[onclick^="adicionarSubtarefa"]:hover {
+  background-color: #6b7280;
+}
