@@ -1,3 +1,7 @@
+Desafio Técnico de Estágio Cyrrus
+
+
+
 1- Qual foi sua lógica para estruturar o projeto?
  R: Minha lógica foi começar de forma simples, focando na estrutura principal: cadastro, exibição e controle de tarefas, utilizando inicialmente o html para fazer os formularios, 
   o localStorage para fazer o armazenamento local dos dados, depois o JavaScript para montar e exibir as tarefas e cumprir os requisitos funcionais do sistema.
