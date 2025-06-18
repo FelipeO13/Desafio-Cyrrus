@@ -22,6 +22,12 @@ document.getElementById('formTarefa').addEventListener('submit', function(e) {
 
     // Commit 3
 
+  // Commit 1 
+
+  // Commit 2
+
+    // Commit 3
+
   tarefas.push(tarefa);
   salvarDados();
   listarTarefas();
