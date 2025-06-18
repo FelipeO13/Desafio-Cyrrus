@@ -17,6 +17,8 @@ document.getElementById('formTarefa').addEventListener('submit', function(e) {
     subtarefas: []
   };
 
+  // Commit 1 
+
   tarefas.push(tarefa);
   salvarDados();
   listarTarefas();
